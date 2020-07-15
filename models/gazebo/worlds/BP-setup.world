@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- iCub -->
+    <include>
+        <uri>model://icub</uri>
+    </include>
+    
+    <!-- Position to be checked -->
+    <!-- Table of the experiment setup -->
+    <include>
+	      <uri>model://BP_table</uri>
+        <pose>1.447 0.027 0.3775 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
