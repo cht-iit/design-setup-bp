@@ -14,14 +14,13 @@
 
     <!-- iCub -->
     <include>
-        <uri>model://icub</uri>
+        <uri>model://icub_fixed</uri>
     </include>
     
-    <!-- Position to be checked -->
-    <!-- Table of the experiment setup -->
+   <!-- Table of the experiment setup -->
     <include>
 	      <uri>model://BP_table</uri>
-        <pose>1.447 0.027 0.3775 0 0 0</pose>
+        <pose>0.60 -0.87 0.7 1.57 0 0</pose>
     </include>
 
   </world>
