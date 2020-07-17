@@ -20,14 +20,14 @@
     <!-- Table of the experiment setup -->
     <include>
 	      <uri>model://BP_table</uri>
-        <pose>0.60 -0.87 0.7 1.57 0 0</pose>
+        <pose>0.24 -0.56 0.68 1.57 0 0</pose>
     </include>
 
    <!-- Cube -->
    <!-- Position to be checked -->
     <include>
 	      <uri>model://BP_cube</uri>
-        <pose>0.70 -0.97 0.8 0 0 0</pose>
+        <pose>0.49 0 0.75 0 0 0</pose>
     </include>
 
   </world>

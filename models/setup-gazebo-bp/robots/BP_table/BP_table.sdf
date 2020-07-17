@@ -3,15 +3,7 @@
   <model name="BP_table">
     <link name="base_link">
         <inertial>
-            <mass>0.1</mass> <!--kg, coming from CAD model properties the real wheight is 24.519749 kg-->
-                <inertia>
-					<ixx>0.001</ixx>
-					<ixy>0</ixy>
-					<ixz>0</ixz>
-					<iyy>0.001</iyy>
-					<iyz>0</iyz>
-					<izz>0.001</izz>
-				</inertia>
+            <mass>100</mass> <!--kg, coming from CAD model properties the real wheight is 24.519749 kg-->
         </inertial>
       <collision name="collision">
         <geometry>
