@@ -9,6 +9,14 @@
                 <parameters>--start --no_stop</parameters>
                 <node>localhost</node>
         </module>
+
+        <module>
+                <name>gazebo</name>
+                <parameters>BP-setup.world</parameters>
+                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
+                <node>localhost</node>
+        </module>
+
 <!-- TODO this has to be launched by gazebo -->
         <module>
                 <name>yarprobotinterface</name>
@@ -94,7 +102,7 @@
 
         <module>
                 <name>actionsRenderingEngine</name>
-                <parameters>--from sim/config.ini</parameters>
+                <parameters>--from gazebo/config.ini</parameters>
                 <dependencies>
                     <port timeout="20">/yarplogger</port>
                     <port timeout="20">/iKinGazeCtrl/rpc</port>
