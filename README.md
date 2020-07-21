@@ -28,7 +28,7 @@ Alternatively, it is possible to install all the dependencies via the [`robotolo
 
 Since this repo contains only `gazebo` models/world and `yarpmanager` scripts, compilation and installation are not required: it is just needed to export/extend the environmental variables:
 - `GAZEBO_RESOURCE_PATH` – let it point **also** to where the [`BP-setup.world`](./models/gazebo/worlds) is located.
-- `GAZEBO_MODEL_PATH` – let it point **also** to where models are located (e.g. [here](./models/setup-gazebo-bp/robots)).
+- `GAZEBO_MODEL_PATH` – let it point **also** to where [models are located](./models/setup-gazebo-bp/robots).
 
 
 ## Demo :rocket:
