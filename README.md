@@ -31,7 +31,7 @@ Since this repo contains only `gazebo` models/world and `yarpmanager` scripts, c
 - `GAZEBO_MODEL_PATH` – let it point **also** to where [models are located](./models/setup-gazebo-bp/robots).
 
 
-## Demo :rocket:
+## How to Run :rocket:
 1. Run `yarpserver`.
 1. Run `yarpmanager`.
 1. Open the [`actionsRenderingEngineSim.xml`](./scripts/actionsRenderingEngineSim.xml) application and select `Run all`.
