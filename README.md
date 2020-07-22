@@ -38,6 +38,6 @@ Since this repo contains only `gazebo` models/world and `yarpmanager` scripts, c
 1. Check that all executables are up and running.
 1. Open a terminal and launch:
    ```sh
-   $ yarp rpc /ActionsRenderingEngine/cmd:io
+   $ yarp rpc /actionsRenderingEngine/cmd:io
    >> grasp ("cartesian" -0.5 -0.1 -0.1 0.0 0.0 1.0 3.14) left
    ```
