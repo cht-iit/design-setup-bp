@@ -5,21 +5,5 @@
 #                                                                              #
 ################################################################################
 
-# @author Nicolò Genesio <nicolo.genesio@iit.it>
-
-cmake_minimum_required(VERSION 3.5)
-project(setup-gazebo-bp
-        VERSION 0.0.1)
-
-find_package(YCM REQUIRED)
-find_package(ICUBcontrib REQUIRED)
-list(APPEND CMAKE_MODULE_PATH ${ICUBCONTRIB_MODULE_PATH})
-include(ICUBcontribOptions)
-include(ICUBcontribHelpers)
-
-icubcontrib_set_default_prefix()
-
-add_subdirectory(models)
-add_subdirectory(are-bp)
-
-include(AddUninstallTarget)
+file(GLOB conf ${CMAKE_CURRENT_SOURCE_DIR}/conf/*.ini)
+yarp_install(FILES ${conf} DESTINATION ${ICUBCONTRIB_CONTEXTS_INSTALL_DIR}/are-bp)

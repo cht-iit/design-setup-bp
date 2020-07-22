@@ -14,7 +14,8 @@
 
     <!-- iCub -->
     <include>
-      <uri>model://icub_fixed</uri>
+      <uri>model://iCubGazeboV2_5_vision_manip</uri>
+      <pose>0 0 0.9 0 0 3.14159</pose>
     </include>
     
     <!-- Table of the experiment setup -->

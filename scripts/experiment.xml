@@ -1,33 +1,17 @@
 <application>
-<name>ActionsRenderingEngine for iCub gazebo</name>
+<name>BP Experiment</name>
 
         <dependencies>
         </dependencies>
 
         <module>
-                <name>yarplogger</name>
-                <parameters>--start --no_stop</parameters>
-                <node>localhost</node>
-        </module>
-
-        <module>
-                <name>gazebo</name>
-                <parameters>BP-setup.world</parameters>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
-                <node>localhost</node>
-        </module>
-
-<!-- TODO this has to be launched by gazebo -->
-        <module>
                 <name>yarprobotinterface</name>
-                <parameters>--context simCartesianControl --config no_legs.xml</parameters>
+                <parameters>--context gazeboCartesianControl --config no_legs.xml</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/icubSim/torso/state:o</port>
                     <port timeout="20">/icubSim/left_arm/state:o</port>
                     <port timeout="20">/icubSim/right_arm/state:o</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <ensure>
                    <wait when="stop">5</wait>
                 </ensure>
@@ -36,38 +20,32 @@
 
         <module>
                 <name>iKinCartesianSolver</name>
-                <parameters>--context simCartesianControl --part right_arm</parameters>
+                <parameters>--context gazeboCartesianControl --part right_arm</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/icubSim/torso/state:o</port>
                     <port timeout="20">/icubSim/right_arm/state:o</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <node>localhost</node>
         </module>
 
         <module>
                 <name>iKinCartesianSolver</name>
-                <parameters>--context simCartesianControl --part left_arm</parameters>
+                <parameters>--context gazeboCartesianControl --part left_arm</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/icubSim/torso/state:o</port>
                     <port timeout="20">/icubSim/left_arm/state:o</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <node>localhost</node>
         </module>
 
         <module>
                 <name>iKinGazeCtrl</name>
-                <parameters>--from configSim.ini</parameters>
+                <parameters>--context gazeboCartesianControl --from iKinGazeCtrl.ini</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/icubSim/torso/state:o</port>
                     <port timeout="20">/icubSim/head/state:o</port>
                     <port timeout="20">/icubSim/inertial</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <ensure>
                    <wait when="stop">5</wait>
                 </ensure>
@@ -76,41 +54,26 @@
 
         <module>
                 <name>wholeBodyDynamics</name>
-                <parameters>--robot icubSim --autoconnect --dummy_ft --no_legs</parameters>
+                <parameters>--robot icubSim --autoconnect --dummy_ft --headV2 --no_legs</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/icubSim/head/state:o</port>
                     <port timeout="20">/icubSim/torso/state:o</port>
                     <port timeout="20">/icubSim/right_arm/state:o</port>
                     <port timeout="20">/icubSim/left_arm/state:o</port>
                     <port timeout="20">/icubSim/inertial</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
-                <node>localhost</node>
-        </module>
-
-        <module>
-                <name>gravityCompensator</name>
-                <parameters>--robot icubSim --no_legs</parameters>
-                <dependencies>
-                    <port timeout="20">/yarplogger</port>
-                    <port timeout="20">/wholeBodyDynamics/rpc:i</port>
-                </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <node>localhost</node>
         </module>
 
         <module>
                 <name>actionsRenderingEngine</name>
-                <parameters>--from gazebo/config.ini</parameters>
+                <parameters>--context are-bp</parameters>
                 <dependencies>
-                    <port timeout="20">/yarplogger</port>
                     <port timeout="20">/iKinGazeCtrl/rpc</port>
                     <port timeout="20">/icubSim/cartesianController/left_arm/state:o</port>
                     <port timeout="20">/icubSim/cartesianController/right_arm/state:o</port>
                     <port timeout="20">/wholeBodyDynamics/rpc:i</port>
                 </dependencies>
-                <environment>YARP_FORWARD_LOG_ENABLE=1</environment>
                 <node>localhost</node>
         </module>
 

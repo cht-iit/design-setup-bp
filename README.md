@@ -20,9 +20,10 @@ The following image shows a first example of the simulated interaction:
 For using the simulated environment contained in this repository you have to install:
 - [`YARP`](https://www.yarp.it/install.html)
 - [`icub-main`](https://wiki.icub.org/wiki/ICub_Software_Installation)
+- [`icub-contrib-common`](https://wiki.icub.org/wiki/ICub_Software_Installation)
 - [`gazebo`](http://gazebosim.org/tutorials?tut=install_ubuntu)
 - [`gazebo-yarp-plugins`](https://github.com/robotology/gazebo-yarp-plugins/blob/master/doc/install.md)
-- [`icub-gazebo`](https://github.com/robotology/icub-gazebo)
+- [`icub-models`](https://github.com/robotology/icub-models)
 
 Alternatively, it is possible to install all the dependencies via the [`robotology-superbuild`](https://github.com/robotology/robotology-superbuild#installation) enabling the [`ROBOTOLOGY_USES_GAZEBO`](https://github.com/robotology/robotology-superbuild#gazebo) profile.
 
@@ -30,14 +31,5 @@ Since this repo contains only `gazebo` models/world and `yarpmanager` scripts, c
 - `GAZEBO_RESOURCE_PATH` – let it point **also** to where the [`BP-setup.world`](./models/gazebo/worlds) is located.
 - `GAZEBO_MODEL_PATH` – let it point **also** to where [models are located](./models/setup-gazebo-bp/robots).
 
-
 ## How to Run :rocket:
-1. Run `yarpserver`.
-1. Run `yarpmanager`.
-1. Open the [`actionsRenderingEngineSim.xml`](./scripts/actionsRenderingEngineSim.xml) application and select `Run all`.
-1. Check that all executables are up and running.
-1. Open a terminal and launch:
-   ```sh
-   $ yarp rpc /actionsRenderingEngine/cmd:io
-   >> grasp ("cartesian" -0.5 -0.1 -0.1 0.0 0.0 1.0 3.14) left
-   ```
+Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).

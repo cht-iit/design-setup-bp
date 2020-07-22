@@ -1,0 +1,18 @@
+image: pattacini/vvv-school:latest
+ports:
+- port: 6080
+  onOpen: notify
+- port: 10000-20000
+  onOpen: ignore
+workspaceLocation: "."
+tasks:
+- init: |
+    init-icubcontrib.sh
+    git clone https://github.com/xEnVrE/icub-models.git --depth 1 --single-branch --branch impl/vision_manipulation_support /workspace/icub-models-xenvre
+    cd /workspace/icub-models-xenvre && mkdir build && cd build
+    cmake ../ && make
+    echo "export YARP_DATA_DIRS=/usr/local/share/yarp:/usr/local/share/iCub:/workspace/iCubContrib/share/ICUBcontrib:/workspace/icub-models-xenvre/build/iCub" >> ~/.bashrc
+    echo "export GAZEBO_RESOURCE_PATH=${GAZEBO_RESOURCE_PATH}:/workspace/iCubContrib/share/gazebo/worlds" >> ~/.bashrc
+    echo "export GAZEBO_MODEL_PATH=/workspace/icub-models-xenvre/build:/workspace/icub-models-xenvre/build/iCub/robots:/workspace/iCubContrib/share/setup-gazebo-bp/robots" >> ~/.bashrc
+- command: start-vnc-session.sh
+- command: gp await-port 6080 && gp preview $(gp url 6080)

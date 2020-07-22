@@ -1,0 +1,86 @@
+<application>
+<name>ActionsRenderingEngine for iCub Gazebo BP Experiment</name>
+
+        <dependencies>
+        </dependencies>
+
+        <module>
+                <name>gazebo</name>
+                <parameters>BP-setup.world</parameters>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>yarprobotinterface</name>
+                <parameters>--context gazeboCartesianControl --config no_legs.xml</parameters>
+                <dependencies>
+                    <port timeout="20">/icubSim/torso/state:o</port>
+                    <port timeout="20">/icubSim/left_arm/state:o</port>
+                    <port timeout="20">/icubSim/right_arm/state:o</port>
+                </dependencies>
+                <ensure>
+                   <wait when="stop">5</wait>
+                </ensure>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>iKinCartesianSolver</name>
+                <parameters>--context gazeboCartesianControl --part right_arm</parameters>
+                <dependencies>
+                    <port timeout="20">/icubSim/torso/state:o</port>
+                    <port timeout="20">/icubSim/right_arm/state:o</port>
+                </dependencies>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>iKinCartesianSolver</name>
+                <parameters>--context gazeboCartesianControl --part left_arm</parameters>
+                <dependencies>
+                    <port timeout="20">/icubSim/torso/state:o</port>
+                    <port timeout="20">/icubSim/left_arm/state:o</port>
+                </dependencies>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>iKinGazeCtrl</name>
+                <parameters>--context gazeboCartesianControl --from iKinGazeCtrl.ini</parameters>
+                <dependencies>
+                    <port timeout="20">/icubSim/torso/state:o</port>
+                    <port timeout="20">/icubSim/head/state:o</port>
+                    <port timeout="20">/icubSim/inertial</port>
+                </dependencies>
+                <ensure>
+                   <wait when="stop">5</wait>
+                </ensure>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>wholeBodyDynamics</name>
+                <parameters>--robot icubSim --autoconnect --dummy_ft --headV2 --no_legs</parameters>
+                <dependencies>
+                    <port timeout="20">/icubSim/head/state:o</port>
+                    <port timeout="20">/icubSim/torso/state:o</port>
+                    <port timeout="20">/icubSim/right_arm/state:o</port>
+                    <port timeout="20">/icubSim/left_arm/state:o</port>
+                    <port timeout="20">/icubSim/inertial</port>
+                </dependencies>
+                <node>localhost</node>
+        </module>
+
+        <module>
+                <name>actionsRenderingEngine</name>
+                <parameters>--context are-bp</parameters>
+                <dependencies>
+                    <port timeout="20">/iKinGazeCtrl/rpc</port>
+                    <port timeout="20">/icubSim/cartesianController/left_arm/state:o</port>
+                    <port timeout="20">/icubSim/cartesianController/right_arm/state:o</port>
+                    <port timeout="20">/wholeBodyDynamics/rpc:i</port>
+                </dependencies>
+                <node>localhost</node>
+        </module>
+
+</application>
