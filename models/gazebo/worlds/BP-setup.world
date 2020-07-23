@@ -14,21 +14,32 @@
 
     <!-- iCub -->
     <include>
-        <uri>model://icub_fixed</uri>
+      <uri>model://icub_fixed</uri>
     </include>
     
     <!-- Table of the experiment setup -->
+    <!-- y: cad half side -->
+    <!-- z: from cad -->
     <include>
-	      <uri>model://BP_table</uri>
-        <pose>0.18 -0.56 0.68 1.57 0 0</pose>
+      <uri>model://BP_table</uri>
+      <pose>0.18 -0.5985 0.67805 1.57 0 0</pose>
     </include>
 
    <!-- Cube -->
-   <!-- Position to be checked -->
+   <!-- x: xtable + cad + half side -->
     <include>
-	      <uri>model://BP_cube</uri>
-        <pose>0.43 0 0.75 0 0 0</pose>
+      <uri>model://BP_cube</uri>
+      <pose>0.4961 -0.04 0.705 0 0 0</pose>
     </include>
+
+    <!-- Camera -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.530126 3.35649 4.20136 -0 0.799642 -1.5958</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
 
   </world>
 </sdf>
