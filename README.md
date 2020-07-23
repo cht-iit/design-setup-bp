@@ -13,7 +13,7 @@ To do so, the 3D meshes of the setup will be imported in the `Gazebo` simulation
 The following image shows a first example of the simulated interaction:
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/9716288/87792442-32924700-c844-11ea-902b-46983301e81e.gif" width="700">
+<img src="https://user-images.githubusercontent.com/3738070/88289196-2bac7e00-ccf5-11ea-9a36-fe0fc19d7817.gif" width="700">
 </p>
 
 ## Installation :gear:
