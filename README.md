@@ -27,7 +27,14 @@ For using the simulated environment contained in this repository you have to ins
 
 Alternatively, it is possible to install all the dependencies via the [`robotology-superbuild`](https://github.com/robotology/robotology-superbuild#installation) enabling the [`ROBOTOLOGY_USES_GAZEBO`](https://github.com/robotology/robotology-superbuild#gazebo) profile.
 
-Since this repo contains only `gazebo` models/world and `yarpmanager` scripts, compilation and installation are not required: it is just needed to export/extend the environmental variables:
+Once done, build and install the project:
+```sh
+$ mkdir build && cd build
+$ cmake ../
+$ make install
+```
+
+Finally, it is required to export/extend the following environmental variables:
 - `GAZEBO_RESOURCE_PATH` – let it point **also** to where the [`BP-setup.world`](./models/gazebo/worlds) is located.
 - `GAZEBO_MODEL_PATH` – let it point **also** to where [models are located](./models/setup-gazebo-bp/robots).
 
