@@ -23,15 +23,15 @@
     <!-- z: from cad -->
     <include>
       <uri>model://BP_table</uri>
-      <pose>0.18 -0.5985 0.67805 1.57 0 0</pose>
+      <pose>0.18 -0.5985 0.75805 1.57 0 0</pose>
     </include>
 
    <!-- Cube -->
    <!-- x: xtable + cad + half side -->
-    <include>
+   <include>
       <uri>model://BP_cube</uri>
-      <pose>0.4961 -0.04 0.705 0 0 0</pose>
-    </include>
+      <pose>0.478119 -0.038964 0.822105 0 0 0</pose>
+    </include> 
 
     <!-- Camera -->
     <gui fullscreen='0'>
