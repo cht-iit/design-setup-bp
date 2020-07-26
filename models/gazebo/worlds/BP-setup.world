@@ -14,7 +14,7 @@
 
     <!-- iCub -->
     <include>
-      <uri>model://iCubGazeboV2_5_vision_manip</uri>
+      <uri>model://iCubGazeboV2_5_visuomanip</uri>
       <pose>0 0 1.0 0 0 3.14159</pose>
     </include>
     
