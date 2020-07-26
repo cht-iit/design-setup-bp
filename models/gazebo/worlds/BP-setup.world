@@ -21,17 +21,25 @@
     <!-- Table of the experiment setup -->
     <!-- y: cad half side -->
     <!-- z: from cad -->
-    <include>
+    <model name="table">
+     <include>
       <uri>model://BP_table</uri>
       <pose>0.18 -0.5985 0.75805 1.57 0 0</pose>
-    </include>
+     </include>
+     <joint name="fixed to ground" type="fixed">
+       <parent>world</parent>
+       <child>BP_table::base_link</child>
+     </joint>
+    </model>
 
    <!-- Cube -->
    <!-- x: xtable + cad + half side -->
-   <include>
+   <model name="cube">
+    <include>
       <uri>model://BP_cube</uri>
       <pose>0.478119 -0.038964 0.822105 0 0 0</pose>
     </include> 
+   </model>
 
     <!-- Camera -->
     <gui fullscreen='0'>
