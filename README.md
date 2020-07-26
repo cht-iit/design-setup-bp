@@ -34,9 +34,10 @@ $ cmake ../
 $ make install
 ```
 
+This will install the simulation assets and the world files under the location managed by the `icub-contrib-common` package (let's name it `ICUBcontrib_DIR` for later reference).
+
 Finally, it is required to export/extend the following environmental variables:
-- `GAZEBO_RESOURCE_PATH` – let it point **also** to where the [`BP-setup.world`](./models/gazebo/worlds) is located.
-- `GAZEBO_MODEL_PATH` – let it point **also** to where [models are located](./models/setup-gazebo-bp/robots).
+- `GAZEBO_MODEL_PATH` – let it point **also** to `${ICUBcontrib_DIR}/share/setup-gazebo-bp/robots`.
 
 ## How to Run :rocket:
 Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
