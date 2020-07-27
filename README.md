@@ -41,3 +41,12 @@ Finally, it is required to export/extend the following environmental variables:
 
 ## How to Run :rocket:
 Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
+
+## Cloud IDE
+You may consider exploring the Gitpod workspace associated to this repo by cliking on the following badge:
+
+[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/setup-gazebo-bp)
+
+🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
+
+[1]: https://spectrum.chat/icub/technicalities/yarp-enabled-gitpod-workspaces-available~73ab5ee9-830e-4b7f-9e99-195295bb5e34
