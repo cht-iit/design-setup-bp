@@ -24,7 +24,7 @@
     <model name="table">
      <include>
       <uri>model://BP_table</uri>
-      <pose>0.18 -0.5985 0.75805 1.57 0 0</pose>
+      <pose>0.18 -0.5985 0.868 1.57 0 0</pose>
      </include>
      <joint name="fixed to ground" type="fixed">
        <parent>world</parent>
