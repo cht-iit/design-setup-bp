@@ -24,8 +24,8 @@
     <model name="table">
      <include>
       <uri>model://BP_table</uri>
-      <pose>0.1 -0.5985 0.848 1.57 0 0</pose>
      </include>
+     <pose>0.1 -0.5985 0.848 1.57 0 0</pose>
      <joint name="fixed to ground" type="fixed">
        <parent>world</parent>
        <child>BP_table::base_link</child>
@@ -37,8 +37,8 @@
    <model name="cube">
     <include>
       <uri>model://BP_cube</uri>
-      <pose>0.35 -0.038964 0.967105 0 0 0</pose>
     </include> 
+    <pose>0.35 -0.038964 0.967105 0 0 0</pose>
    </model>
 
     <!-- Camera -->
