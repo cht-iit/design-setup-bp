@@ -43,7 +43,7 @@ Finally, it is required to export/extend the following environmental variables:
 Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
 
 ## Cloud IDE
-You may consider exploring the Gitpod workspace associated to this repo by cliking on the following badge:
+You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/setup-gazebo-bp)
 
