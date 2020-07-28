@@ -34,5 +34,5 @@ endif()
 # Install the whole models directory
 install(DIRECTORY ${CMAKE_BINARY_DIR}/setup-gazebo-bp DESTINATION share)
 
-# Install the whole gazebo/worls
+# Install the whole gazebo/worlds
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gazebo/worlds DESTINATION share/gazebo)
