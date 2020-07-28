@@ -37,7 +37,7 @@
    <model name="cube">
     <include>
       <uri>model://BP_cube</uri>
-      <pose>0.478119 -0.038964 0.822105 0 0 0</pose>
+      <pose>0.478119 -0.038964 0.987105 0 0 0</pose>
     </include> 
    </model>
 
