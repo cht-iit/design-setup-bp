@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- iCub -->
+    <include>
+      <uri>model://iCubGazeboV2_5_visuomanip</uri>
+      <pose>0 0 1.0 0 0 3.14159</pose>
+    </include>
+    
+    <!-- Table of the experiment setup -->
+    <!-- y: cad half side -->
+    <!-- z: from cad -->
+    <model name="table">
+     <include>
+      <uri>model://BP_table</uri>
+     </include>
+     <pose>0.1 -0.5985 0.848 1.57 0 0</pose>
+     <joint name="fixed to ground" type="fixed">
+       <parent>world</parent>
+       <child>BP_table::base_link</child>
+     </joint>
+    </model>
+
+   <!-- Cube -->
+   <!-- x: xtable + cad + half side -->
+   <!-- y: half drawer width + 0.2  -->
+   <model name="cube">
+    <include>
+      <uri>model://BP_cube</uri>
+    </include> 
+    <pose>0.3 0.3 0.967105 0 0 0.34907</pose>
+   </model>
+
+    <!-- Camera -->
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>0.530126 3.35649 4.20136 -0 0.799642 -1.5958</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
   <model name="BP_cube">
-    <static>false</static>
+    <static>true</static>
     <link name="link">
         <collision name="collision">
             <geometry>
