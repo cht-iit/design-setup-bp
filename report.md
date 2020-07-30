@@ -1,3 +1,5 @@
+# 1. Design of Experiment
+
 The following report describes the procedure adopted to determine the optimal sizes of the table and the drawer.
 The procedure consisted of the following steps:
 1. [**identifying a nominal target pose**](#identifying-a-nominal-target-pose): we selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joint configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table;
@@ -6,7 +8,7 @@ The procedure consisted of the following steps:
 4. [**selecting pick/drop pose**](#selecting-a-pick-and-drop-pose): we additionally seeked for a suitable second location next to the drawer where iCub can pick/drop the cube.
 
 
-# 1. Identifying a nominal target pose
+# 2. Identifying a nominal target pose
 
 The **nominal target pose** was selected such that:
 - the **error in position**, computed this as Euclidean distance between desired and reached target, is **below `1cm`**;
@@ -59,9 +61,9 @@ The errors in position and orientation are fairy below the thresholds, along wit
 
 Finally, **the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`**.
 
-# 2. Sensitivity analysis
+# 3. Sensitivity analysis
 
-## 2.1 Sampling the nominal pose
+## 3.1 Sampling the nominal pose
 
 Given the nominal pose we chose `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` following the analysis in #10, we perturbed its position sampling it with a uniform method within the three following ranges:
 - along the x direction: `[-5 5] cm`;
@@ -70,7 +72,7 @@ Given the nominal pose we chose `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` followin
 
 We selected `100` poses around the nominal pose with the afore-mentioned method and evaluated the **error** in _position_ and _orientation_ between the reached and the desired target and the **joint configuration**.
 
-## 2.2 Evaluating errors in position and orientation
+## 3.2 Evaluating errors in position and orientation
 
 The following shows the errors in position and orientation for the sampled poses:
 
@@ -98,7 +100,7 @@ The plots show that:
 - the **error in position** stays consistently below `1cm`, with a _slight_ increase in the **top area** (cyan dots), corresponding to poses further from the robot;
 - the **error in orientation** presents a **bottom right area** with higher values, corresponding to poses closer to the robot and to the right of the nominal pose. This is expected as the left arm is used for performing the analysis and, importantly, the **right arm** can be used to cover this area.    
 
-## 2.3 Evaluating the joint configuration
+## 3.3 Evaluating the joint configuration
 
 The following shows the distances of each joint from its lower and upper limit for the sampled poses:
 
@@ -115,7 +117,7 @@ The joints are fairly distant from their limits (black and red histograms are hi
 
 Again, for this area the **right arm** can be used.
 
-## 2.4 Final remarks
+## 3.4 Final remarks
 
 The sensitivity analysis shows that:
 - __the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation__;
@@ -123,10 +125,10 @@ The sensitivity analysis shows that:
 - the sub-area on the right of the nominal pose is reached with __higher error in orientation and the elbow configuration close to its lower limit__. This can be addressed by resorting to the __right arm__ to cover the area.
 
 
-# 3. Optimizing table and drawer dimensions
+# 4. Optimizing table and drawer dimensions
 
 
-# 4. Selecting a pick and drop pose
+# 5. Selecting a pick and drop pose
 
 Finally, we selected a second location next to the drawer where iCub can pick/drop the cube.
 The pose selected is `-0.3 -0.3 -0.05 0.0 0.0 1.0 3.49066`, as it produced the following output:
