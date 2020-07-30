@@ -128,7 +128,7 @@ The sensitivity analysis shows that:
 - the sub-area on the right of the nominal pose is reached with __higher error in orientation and the elbow configuration close to its lower limit__. This can be addressed by resorting to the __right arm__ to cover the area.
 
 ## 3. Optimizing table and drawer dimensions
-The dimensions of the table has been designed in close loop with MWS for allowing a comfortable grasp pose from the iCub standpoint.
+The dimensions of the table has been designed with the help of MWS for allowing a comfortable grasp from the iCub standpoint.
 
 ### 3.1 Drawer
 The height of the drawer has been reduced from `10 cm` to `5 cm` in order to facilitate the grasping of the cube.
