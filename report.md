@@ -171,7 +171,7 @@ Here is some measures:
 <img src="./assets/height_root.png" width="700">
 </p>
 
-**Height of cube to face**
+**Height of cube top face**
 
 <p align="center">
 <img src="./assets/height_cube.png" width="700">
