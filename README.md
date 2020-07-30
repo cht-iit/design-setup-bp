@@ -42,7 +42,7 @@ Finally, it is required to export/extend the following environmental variables:
 ## 🌐 Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
-[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/design-setup-bp)
+[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/cht-iit/design-setup-bp)
 
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
 
