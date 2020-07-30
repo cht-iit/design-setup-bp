@@ -10,7 +10,7 @@ To do so, the 3D meshes of the setup will be imported in the `Gazebo` simulation
 
 ⚠ Importantly, the iCub will be executing predefined movements without relying on its percepetive capabilities 👀❌
 
-The following animation shows iCub performing the experiment using the setup resulring from this design:
+The animation below shows iCub performing the experiment with the setup resulting from this design:
 
 <p align="center">
 <img src="./assets/showcase.gif" width="700">
