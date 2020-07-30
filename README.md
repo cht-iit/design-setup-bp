@@ -43,7 +43,10 @@ Finally, it is required to export/extend the following environmental variables:
 - For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
 - To test a possible and comfortable pick/drop pose, launch the script [`run-experiment.sh`](./scripts/run-drop.sh).
 
-## Cloud IDE
+## Optimizing table and drawer dimensions 📐
+The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [here](report.md).
+
+## Cloud IDE 🌐
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/design-setup-bp)
@@ -51,6 +54,3 @@ You may consider exploring the Gitpod workspace associated to this repo by click
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
 
 [1]: https://spectrum.chat/icub/technicalities/yarp-enabled-gitpod-workspaces-available~73ab5ee9-830e-4b7f-9e99-195295bb5e34
-
-## Optimizing table and drawer dimensions
-The detailed analysis that led us to choose the best dimensions of table and drawer can be found [here](report.md).
