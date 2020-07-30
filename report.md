@@ -2,10 +2,10 @@
 
 The following report describes the procedure adopted to determine the optimal sizes of the table and the drawer.
 The procedure consisted of the following steps:
-1. [**identifying a nominal target pose**](#identifying-a-nominal-target-pose): we selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joint configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table;
-2. [**sensitivity analysis**](#sensitivity-analysis): we performed a sensitivity analysis by _perturbing the nominal pose in position_ using a uniform sampling method;
-3. [**optimizing table and drawer dimensions**](#optimizing-table-and-drawer-dimensions): we optimized for the table relative position with respect to the robot, its dimensions as well as the dimensions of the drawer. The quantity we aim to optimize for was the distance between the top-center of the cube and our target pose;
-4. [**selecting pick/drop pose**](#selecting-a-pick-and-drop-pose): we additionally seeked for a suitable second location next to the drawer where iCub can pick/drop the cube.
+1. [**identifying a nominal target pose**](#2-identifying-a-nominal-target-pose): we selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joint configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table;
+2. [**sensitivity analysis**](#3-sensitivity-analysis): we performed a sensitivity analysis by _perturbing the nominal pose in position_ using a uniform sampling method;
+3. [**optimizing table and drawer dimensions**](#4-optimizing-table-and-drawer-dimensions): we optimized for the table relative position with respect to the robot, its dimensions as well as the dimensions of the drawer. The quantity we aim to optimize for was the distance between the top-center of the cube and our target pose;
+4. [**selecting pick/drop pose**](#5-selecting-a-pick-and-drop-pose): we additionally seeked for a suitable second location next to the drawer where iCub can pick/drop the cube.
 
 
 # 2. Identifying a nominal target pose
