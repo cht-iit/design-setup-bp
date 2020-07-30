@@ -121,12 +121,18 @@ The joints are fairly distant from their limits (black and red histograms are hi
 
 Again, for this area the **right arm** can be used.
 
-### 2.4 Final remarks
+### 2.4 Simulated interaction with optimized setup
+The following image shows the simulated interaction with the final optimized setup:
+
+<p align="center">
+<img src="./assets/showcase.gif" width="700">
+</p>
+
+### 2.5 Final remarks
 The sensitivity analysis shows that:
 - __the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation__;
 - such area is reached with a __reasonable joints configuration__;
 - the sub-area on the right of the nominal pose is reached with __higher error in orientation and the elbow configuration close to its lower limit__. This can be addressed by resorting to the __right arm__ to cover the area.
-
 
 ## 3. Optimizing table and drawer dimensions
 The dimensions of the table has been designed in close loop with MWS for allowing a comfortable grasp pose from the iCub standpoint.
@@ -160,12 +166,6 @@ Here is some measures taken from the final CAD drawings:
 Finally, we selected a second location next to the drawer where iCub can pick/drop the cube.
 The pose selected is `-0.3 -0.3 -0.05 0.0 0.0 1.0 3.49066`, as it produced the following output:
 
-![out-pose-2](https://user-images.githubusercontent.com/9716288/88827346-24401580-d1ca-11ea-965f-e04c3d374afb.gif)
-
-## Simulated interaction with optimized setup
-
-The following image shows the simulated interaction with the final optimized setup:
-
 <p align="center">
-<img src="./assets/showcase.gif" width="700">
+<img src="https://user-images.githubusercontent.com/9716288/88827346-24401580-d1ca-11ea-965f-e04c3d374afb.gif" width="700">
 </p>
