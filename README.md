@@ -41,7 +41,7 @@ Finally, it is required to export/extend the following environmental variables:
 
 ## How to Run :rocket:
 - For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
-- To test a possible and comfortable pick/drop pose, launch the script [`run-experiment.sh`](./scripts/run-drop.sh).
+- To test a possible and comfortable pick/drop pose, launch the script [`run-drop.sh`](./scripts/run-drop.sh).
 
 ## Design of experiment and dimensions optimization 📐
 The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [here](report.md).
