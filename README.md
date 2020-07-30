@@ -44,7 +44,7 @@ Finally, it is required to export/extend the following environmental variables:
 - To test a possible and comfortable pick/drop pose, launch the script [`run-drop.sh`](./scripts/run-drop.sh).
 
 ## 📐 Design of experiment and dimensions optimization
-The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [here](report.md).
+The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [📑 here](report.md).
 
 ## 🌐 Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
