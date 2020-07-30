@@ -4,7 +4,7 @@ Design of Experiment
 The following report describes the procedure adopted to determine the optimal sizes of the table and the drawer.
 The procedure consisted of the following steps:
 1. [**Identifying a nominal target pose**](#1-identifying-a-nominal-target-pose)
-    - We selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joints configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table.
+    - We selected the left arm and identified a _nominal target pose_ to be reached both in position and orientation with low errors and with a joints configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table.
 1. [**Sensitivity analysis**](#2-sensitivity-analysis)
     - We performed a sensitivity analysis by _perturbing the nominal pose in position_ using a uniform sampling method.
 1. [**Optimizing table and drawer dimensions**](#3-optimizing-table-and-drawer-dimensions)
