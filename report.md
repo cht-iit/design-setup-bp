@@ -51,7 +51,7 @@ Regarding the other targets, we can notice that:
 
 The following are the errors in position and orientation and the joint configuration over the three repetitions for **target 8**.
 
-| Err pos | Err ori |
+| error position [cm] | error orientation [deg] |
 |--- |--- |
 |<img src=https://user-images.githubusercontent.com/9716288/88903253-ad4f5f00-d253-11ea-889f-e883d3c44bf2.jpg width="350"> | <img src=https://user-images.githubusercontent.com/9716288/88903240-a9234180-d253-11ea-84fb-9b07f6c8b45d.jpg width="350"> |
 | _Legend_: <br> _blue: error_ <br> _magenta: threshold_  |
@@ -80,7 +80,7 @@ We selected `100` poses around the nominal pose with the afore-mentioned method 
 
 The following shows the errors in position and orientation for the sampled poses:
 
-| Err pos [cm] | Err ori [deg] |
+| error position [cm] | error orientation [deg] |
 | ------------- | ------------- |  
 | <p align="center"> <img src=https://user-images.githubusercontent.com/9716288/88762783-237b9500-d172-11ea-9526-58767d1e6817.jpg width="350"> </p> | <p align="center"> <img src=https://user-images.githubusercontent.com/9716288/88762789-25455880-d172-11ea-8b96-ede92643f454.jpg width="350"> </p> |
 | _Legend_: <br> _blue: error_ <br> _magenta: threshold: `1 cm`_ | _Legend_: <br> _blue: error_ <br> _magenta: threshold: `15 deg`_  |
