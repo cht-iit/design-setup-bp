@@ -39,18 +39,18 @@ This will install the simulation assets and the world files under the location m
 Finally, it is required to export/extend the following environmental variables:
 - `GAZEBO_MODEL_PATH` – let it point **also** to `${ICUBcontrib_DIR}/share/setup-gazebo-bp/robots`.
 
-## 🚀 How to Run
-- For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
-- To test a possible and comfortable pick/drop pose, launch the script [`run-drop.sh`](./scripts/run-drop.sh).
-
-## 📐 Design of experiment and dimensions optimization
-The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [📑 here](report.md).
-
 ## 🌐 Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/design-setup-bp)
 
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
+
+## 🚀 How to Run
+- For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
+- To test a possible and comfortable pick/drop pose, launch the script [`run-drop.sh`](./scripts/run-drop.sh).
+
+## 📐 Design of experiment and dimensions optimization
+The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [📑 here](report.md).
 
 [1]: https://spectrum.chat/icub/technicalities/yarp-enabled-gitpod-workspaces-available~73ab5ee9-830e-4b7f-9e99-195295bb5e34
