@@ -133,33 +133,32 @@ The sensitivity analysis shows that:
 
 
 ## 3. Optimizing table and drawer dimensions
-
-The dimensions of the table has been designed in close loop for allowing a comfortable grasp pose for iCub.
+The dimensions of the table has been designed in close loop with MWS for allowing a comfortable grasp pose from the iCub standpoint.
 
 ### 3.1 Drawer
-The height of the drawer has reduced from 10cm to 5cm in order to facilitate the grasping of the cube.
+The height of the drawer has been reduced from `10 cm` to `5 cm` in order to facilitate the grasping of the cube.
 
 | Before | After |
 | :---: | :---: |
 | ![](./assets/drawer_before.png) | ![](./assets/drawer_after.png) |
 
 ### 3.2 Table
-Since the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` we changed the table's dimensions in order to have the center of the top face of the cube at `(-0.35 0.0 -0.05)` respect to the [root of iCub](http://wiki.icub.org/wiki/ICubForwardKinematics).
+Since the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`, we changed the table dimensions in order to have the center of the top face of the cube at `(-0.35 0.0 -0.05)` with respect to the [root of iCub](http://wiki.icub.org/wiki/ICubForwardKinematics).
 
-We achieved that reducing the table dimensions and the height of the pole of iCub stand.
+We achieved that by reducing the table dimensions and the height of the pole of iCub stand.
 
-Here is some measures:
+Here is some measures taken from the final CAD drawings:
 
 | |
 | :---: |
 | **Depth of the table** |
-| ![](./assets/depth_table.png) |
+| <p align="center"><img src=./assets/depth_table.png width="500"></p> |
 | **Height of iCub root frame** |
-| ![](./assets/height_root.png) |
+| <p align="center"><img src=./assets/height_root.png width="500"></p> |
 | **Height of cube top face** |
-| ![](./assets/height_cube.png) |
+| <p align="center"><img src=./assets/height_cube.png width="500"></p> |
 | **Resulting transformation cube->root** |
-| ![](./assets/cube_root_transform.png) |
+| <p align="center"><img src=./assets/cube_root_transform.png width="500"></p> |
 
 ## 4. Selecting a pick and drop pose
 
