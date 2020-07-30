@@ -22,7 +22,7 @@ The **nominal target pose** was selected such that:
 The analysis was performed by selecting a bunch of targets to reach and evaluating the aforementioned errors.
 The following table summarizes the results for different targets (averaged over 3 repetitions).
 
-|  Target                            |  Err <br> pos <br> [cm] |  Err <br> ori [deg]  | Shoulder  <br> [deg]           |   Elbow <br> [deg] | Wrist <br> [deg]  |  Torso <br> [deg] |  
+|  Target                            |  error <br> position [cm] |  error <br> orientation [deg]  | Shoulder  <br> [deg]           |   Elbow <br> [deg] | Wrist <br> [deg]  |  Torso <br> [deg] |  
 |  ------                            |  -------------|  -------   | ----------              |   -------- |  ------- | -------- |  
 |  Target 1: <br> xd = -0.6 0.0 -0.1 <br> ori = 0.0 0.0 1.0 3.14   |       **9**    |     **53.1**    |  pitch = [**0.1** 105.0] <br> roll = [54.2 105.8] <br> yaw = [51.6 65.4]   | [26.8 64.2] |  prosup = [110.6 9.4] <br> pitch = [62.1 42.9] <br> yaw = [24.4 20.6] | yaw = [99.8 **0.2**] <br> roll = [29.9 30.1] <br> pitch = [69.1 21.0] <br>         |
 |  Target 2: <br>xd = -0.5 0.0 -0.1 <br> ori = 0.0 0.0 1.0 3.14   |      0.6    |     4.0    |  pitch = [**0.3** 105.3] <br> roll = [62.9 97.1] <br> yaw = [93.8 23.2]   | [17.9 73.1] |  prosup = [120.0 **0.05**] <br> pitch = [65.1 40.0] <br> yaw = [38.9 **6.1**] | yaw = [99.9 **0.1**] <br> roll = [29.9 30.1] <br> pitch = [64.1 25.9] <br>         |
@@ -95,7 +95,7 @@ Therefore the sensitivity analysis shows that the area around the nominal pose w
 We further analyzed the errors to investigate the poses providing higher errors.
 The following plots show the poses around the nominal one sampled within the ranges `x` and `y` (the center represents the nominal pose where the icub hand is drawn), with the colors quantifying the errors in position and orientation respectively.  
 
-| Err pos [cm] | Err ori [deg] |
+| error position [cm] | error orientation [deg] |
 | ------------- | ------------- |  
 | <p align="center"> <img src=https://user-images.githubusercontent.com/9716288/88765314-96870a80-d176-11ea-9143-7975044116f9.jpg width="450"> </p> | <p align="center"> <img src=https://user-images.githubusercontent.com/9716288/88765318-9850ce00-d176-11ea-9e20-722844240ddf.jpg width="450"> </p> |
 | _Legend_: <br> _blue: `0 cm`_ <br> _yellow: `2 cm`_  | _Legend_: <br> _blue: `0 deg`_ <br> _yellow: `20 deg`_ |
