@@ -38,14 +38,15 @@
    <model name="cube">
     <include>
       <uri>model://BP_cube</uri>
-    </include> 
+    </include>
+    <static>true</static>
     <pose>0.3 0.3 0.745 0 0 0.34907</pose>
    </model>
 
     <!-- Camera -->
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>0.530126 3.35649 4.20136 -0 0.799642 -1.5958</pose>
+        <pose>0.272502 -4.00755 4.03023 0 0.687642 1.5482</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
