@@ -161,3 +161,11 @@ Finally, we selected a second location next to the drawer where iCub can pick/dr
 The pose selected is `-0.3 -0.3 -0.05 0.0 0.0 1.0 3.49066`, as it produced the following output:
 
 ![out-pose-2](https://user-images.githubusercontent.com/9716288/88827346-24401580-d1ca-11ea-965f-e04c3d374afb.gif)
+
+## Simulated interaction with optimized setup
+
+The following image shows the simulated interaction with the final optimized setup:
+
+<p align="center">
+<img src="./assets/showcase.gif" width="700">
+</p>
