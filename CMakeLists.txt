@@ -8,7 +8,7 @@
 # @author Nicolò Genesio <nicolo.genesio@iit.it>
 
 cmake_minimum_required(VERSION 3.5)
-project(setup-gazebo-bp
+project(design-setup-bp
         VERSION 0.0.1)
 
 find_package(YCM REQUIRED)

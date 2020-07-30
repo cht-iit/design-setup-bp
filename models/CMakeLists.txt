@@ -11,10 +11,10 @@ macro(SUBDIRLIST result curdir)
   set(${result} ${dirlist})
 endmacro()
 
-# Copy the setup-gazebo-bp folder in the build tree
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/setup-gazebo-bp DESTINATION ${CMAKE_BINARY_DIR})
+# Copy models in the build tree
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME} DESTINATION ${CMAKE_BINARY_DIR})
 
-# List all the .sdf files in  ${CMAKE_BINARY_DIR}/setup-gazebo-bp
+# List all the .sdf files in  ${CMAKE_BINARY_DIR}/${PROJECT_NAME}
 file(GLOB_RECURSE sdf_files ${CMAKE_BINARY_DIR}/*.sdf)
 
 # Workaround for the following osrf/gazebo issues:
@@ -32,7 +32,7 @@ if(GAZEBO_VERSION VERSION_GREATER_EQUAL 11.0)
 endif()
 
 # Install the whole models directory
-install(DIRECTORY ${CMAKE_BINARY_DIR}/setup-gazebo-bp DESTINATION share)
+install(DIRECTORY ${CMAKE_BINARY_DIR}/${PROJECT_NAME} DESTINATION share)
 
 # Install the whole gazebo/worlds
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/gazebo/worlds DESTINATION share/gazebo)
