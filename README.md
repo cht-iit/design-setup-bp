@@ -43,7 +43,7 @@ Finally, it is required to export/extend the following environmental variables:
 - For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
 - To test a possible and comfortable pick/drop pose, launch the script [`run-experiment.sh`](./scripts/run-drop.sh).
 
-## Optimizing table and drawer dimensions 📐
+## Design of experiment and dimensions optimization 📐
 The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [here](report.md).
 
 ## Cloud IDE 🌐
