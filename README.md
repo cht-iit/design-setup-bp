@@ -47,8 +47,8 @@ You may consider exploring the Gitpod workspace associated to this repo by click
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
 
 ## 🚀 How to Run
-- For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
-- To test a possible and comfortable pick/drop pose, launch the script [`run-drop.sh`](./scripts/run-drop.sh).
+- For running the main experiment, simply launch the script [`bp-run-experiment.sh`](./scripts/bp-run-experiment.sh).
+- To test a possible and comfortable pick/drop pose, launch the script [`bp-run-drop.sh`](./scripts/bp-run-drop.sh).
 
 ## 📐 Design of experiment and dimensions optimization
 The detailed analysis that led us to choose the best dimensions of the table and the drawer can be found [📑 here](report.md).
