@@ -134,6 +134,55 @@ The sensitivity analysis shows that:
 
 ## 3. Optimizing table and drawer dimensions
 
+The dimensions of the table has been designed in close loop for allowing a comfortable grasp pose for iCub.
+
+### 3.1 Drawer
+The height of the drawer has reduced from 10cm to 5cm in order to facilitate the grasping of the cube.
+**Before**
+
+<p align="center">
+<img src="./assets/drawer_before.png" width="700">
+</p>
+
+
+**After**
+
+<p align="center">
+<img src="./assets/drawer_after.png" width="700">
+</p>
+
+### 3.2 Table
+
+Since the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` we changed the table's dimensions in order to have the center of the top face of the cube at `(-0.35 0.0 -0.05)` respect to the [root of iCub](http://wiki.icub.org/wiki/ICubForwardKinematics).
+
+We achieved that reducing the table dimensions and the height of the pole of iCub stand.
+
+Here is some measures:
+
+**Depth of the table**
+
+<p align="center">
+<img src="./assets/depth_table.png" width="700">
+</p>
+
+**Height of iCub root frame**
+
+<p align="center">
+<img src="./assets/height_root.png" width="700">
+</p>
+
+**Height of cube to face**
+
+<p align="center">
+<img src="./assets/height_cube.png" width="700">
+</p>
+
+**The resulting transformation cube->root**
+
+<p align="center">
+<img src="./assets/cube_root_transform.png" width="700">
+</p>
+
 
 ## 4. Selecting a pick and drop pose
 
