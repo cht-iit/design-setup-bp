@@ -8,7 +8,7 @@ This repository contains the software required to optimize the dimensions of the
 The final aim is to provide the Mechanical Workshop Unit (MWS) with the optimal sizes of the table (i.e. length and width) and the drawer (i.e. length, width and height).
 To do so, the 3D meshes of the setup will be imported in the `Gazebo` simulation environment and the iCub will be programmed to touch the object inside the drawer. The table and drawer parameters will be optimized in order to maximize the robot reachability to the box, while guaranteeing a safe interaction with the drawer.
 
-☝🏻 Importantly, the iCub will be executing predefined movements without relying on its percepetive capabilities.
+⚠ Importantly, the iCub will be executing predefined movements without relying on its percepetive capabilities 👀❌
 
 The following image shows a first example of the simulated interaction:
 
