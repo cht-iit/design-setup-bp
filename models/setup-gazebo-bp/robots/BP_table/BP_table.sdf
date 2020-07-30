@@ -8,7 +8,7 @@
       <collision name="collision">
         <geometry>
             <mesh>
-                <uri> model://BP_table/meshes/BP-table-16cmhigher.stl </uri>
+                <uri> model://BP_table/meshes/BP_table.stl </uri>
                 <scale>0.001 0.001 0.001</scale>
             </mesh>
         </geometry>
@@ -16,7 +16,7 @@
       <visual name="visual">
         <geometry>
             <mesh>
-                <uri> model://BP_table/meshes/BP-table-16cmhigher.stl </uri>
+                <uri> model://BP_table/meshes/BP_table.stl </uri>
                 <scale>0.001 0.001 0.001</scale>
             </mesh>
         </geometry>

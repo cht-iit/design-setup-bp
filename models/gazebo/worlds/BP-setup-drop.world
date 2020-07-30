@@ -15,7 +15,7 @@
     <!-- iCub -->
     <include>
       <uri>model://iCubGazeboV2_5_visuomanip</uri>
-      <pose>0 0 1.0 0 0 3.14159</pose>
+      <pose>0 0 0.785 0 0 3.14159</pose>
     </include>
     
     <!-- Table of the experiment setup -->
@@ -25,7 +25,7 @@
      <include>
       <uri>model://BP_table</uri>
      </include>
-     <pose>0.1 -0.5985 0.848 1.57 0 0</pose>
+     <pose>0.1 -0.5985 0.698 1.57 0 0</pose>
      <joint name="fixed to ground" type="fixed">
        <parent>world</parent>
        <child>BP_table::base_link</child>
@@ -39,7 +39,7 @@
     <include>
       <uri>model://BP_cube</uri>
     </include> 
-    <pose>0.3 0.3 0.967105 0 0 0.34907</pose>
+    <pose>0.3 0.3 0.745 0 0 0.34907</pose>
    </model>
 
     <!-- Camera -->
