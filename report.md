@@ -10,7 +10,7 @@ The procedure consisted of the following steps:
 
 The **nominal target pose** was selected such that:
 - the **error in position**, computed this as Euclidean distance between desired and reached target, is **below `1cm`**;
-- the **error in orientation**, computed this as $\asin \theta$, where $\theta$ is the angle between desired and reached orientation, is **below `15 degrees`**;
+- the **error in orientation**, computed this as $\arcsin \theta$, where $\theta$ is the angle between desired and reached orientation, is **below `15 degrees`**;
 - the **joint configuration**, evaluated as distance between each joint (of left arm and torso) and their lower and upper limits, is **higher than `5.0 degrees`**.
 
 The analysis was performed by selecting a bunch of targets to reach and evaluating the aforementioned errors.
