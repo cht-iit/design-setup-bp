@@ -121,14 +121,7 @@ The joints are fairly distant from their limits (black and red histograms are hi
 
 Again, for this area the **right arm** can be used.
 
-### 2.4 Simulated interaction with optimized setup
-The following image shows the simulated interaction with the final optimized setup:
-
-<p align="center">
-<img src="./assets/showcase.gif" width="700">
-</p>
-
-### 2.5 Final remarks
+### 2.4 Final remarks
 The sensitivity analysis shows that:
 - __the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation__;
 - such area is reached with a __reasonable joints configuration__;
@@ -161,6 +154,13 @@ Here is some measures taken from the final CAD drawings:
 | <p align="center"><img src=./assets/height_cube.png width="600"></p> |
 | **Resulting transformation cube->root** |
 | <p align="center"><img src=./assets/cube_root_transform.png width="600"></p> |
+
+### 3.3 Simulated interaction with optimized setup
+The following image shows the simulated interaction with the final optimized setup:
+
+<p align="center">
+<img src="./assets/showcase.gif" width="700">
+</p>
 
 ## 4. Selecting a pick and drop pose
 Finally, we selected a second location next to the drawer where iCub can pick/drop the cube.
