@@ -1,11 +1,11 @@
 # Design Setup Boggiano Pico
-This repository contains the software required to optimize the dimensions of the setup which will be used to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
+This repository contains the software required to optimize the dimensions of the setup which will be used by the [S4HRI Unit](https://iit.it/research/lines/social-cognition-in-human-robot-interaction) at IIT to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/9716288/88031776-5d7ae480-cb3d-11ea-9967-af5954de04e4.png" width="400">
 </p>
 
-The final aim is to provide the Mechanical Workshop Unit (MWS) with the optimal sizes of the table (i.e. length and width) and the drawer (i.e. length, width and height).
+The final aim is to provide the [Mechanical Workshop Unit (MWS)](https://iit.it/research/facilities/mechanical-workshop) with the optimal sizes of the table (i.e. length and width) and the drawer (i.e. length, width and height).
 To do so, the 3D meshes of the setup will be imported in the `Gazebo` simulation environment and the iCub will be programmed to touch the object inside the drawer. The table and drawer parameters will be optimized in order to maximize the robot reachability to the box, while guaranteeing a safe interaction with the drawer.
 
 ⚠ Importantly, the iCub will be executing predefined movements without relying on its percepetive capabilities 👀❌
