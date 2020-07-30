@@ -40,7 +40,8 @@ Finally, it is required to export/extend the following environmental variables:
 - `GAZEBO_MODEL_PATH` – let it point **also** to `${ICUBcontrib_DIR}/share/setup-gazebo-bp/robots`.
 
 ## How to Run :rocket:
-Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
+- For running the main experiment, simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
+- To test a possible and comfortable pick/drop pose, launch the script [`run-experiment.sh`](./scripts/run-drop.sh).
 
 ## Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
