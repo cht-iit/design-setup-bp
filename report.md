@@ -14,7 +14,7 @@ The procedure consisted of the following steps:
 
 #### ⚠ **Important note**
 We simulated **reaching actions** and not grasping, as this is _task dependent_.
-Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but is a work in progress.
+Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but it is a work in progress.
 
 ## 1. Identifying a nominal target pose
 The **nominal target pose** was selected such that:
