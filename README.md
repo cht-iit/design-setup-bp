@@ -1,4 +1,4 @@
-# Setup Gazebo Boggiano Pico
+# Design Setup Boggiano Pico
 This repository contains the software required to optimize the dimensions of the setup which will be used to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
 
 <p align="center">
@@ -45,7 +45,7 @@ Simply launch the script [`run-experiment.sh`](./scripts/run-experiment.sh).
 ## Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
-[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/setup-gazebo-bp)
+[![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/icub-tech-iit/design-setup-bp)
 
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
 
