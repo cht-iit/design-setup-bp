@@ -93,7 +93,7 @@ The two percentages are comparable and fairly low, indicating that we can achiev
 Therefore the sensitivity analysis shows that the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation, which are reasonable values when considering the _reaching task_. Importantly, the chosen thresholds can be adjusted depending on the specific task to perform.
 
 We further analyzed the errors to investigate the poses providing higher errors.
-The following plots show the poses around the nominal one sampled within the ranges `x` and `y` (the center represents the nominal pose where the icub hand is drawn), with the colors quantifying the errors in position and orientation respectively.  
+The following plots show the poses around the nominal one sampled within the ranges `x` and `y` (the center represents the nominal pose where the icub hand is drawn not in scale), with the colors quantifying the errors in position and orientation respectively.  
 
 | error position [cm] | error orientation [deg] |
 | ------------- | ------------- |  
