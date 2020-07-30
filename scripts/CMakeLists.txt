@@ -5,22 +5,10 @@
 #                                                                              #
 ################################################################################
 
-# @author Nicolò Genesio <nicolo.genesio@iit.it>
+# Install the application
+file(GLOB apps ${CMAKE_CURRENT_SOURCE_DIR}/*.xml)
+yarp_install(FILES ${apps} DESTINATION ${ICUBCONTRIB_APPLICATIONS_INSTALL_DIR})
 
-cmake_minimum_required(VERSION 3.5)
-project(setup-gazebo-bp
-        VERSION 0.0.1)
-
-find_package(YCM REQUIRED)
-find_package(ICUBcontrib REQUIRED)
-list(APPEND CMAKE_MODULE_PATH ${ICUBCONTRIB_MODULE_PATH})
-include(ICUBcontribOptions)
-include(ICUBcontribHelpers)
-
-icubcontrib_set_default_prefix()
-
-add_subdirectory(scripts)
-add_subdirectory(models)
-add_subdirectory(are-bp)
-
-include(AddUninstallTarget)
+# Install startup scripts
+file(GLOB scripts ${CMAKE_CURRENT_SOURCE_DIR}/*.sh)
+install(PROGRAMS ${scripts} DESTINATION bin)
