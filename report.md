@@ -16,7 +16,6 @@ The procedure consisted of the following steps:
 Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but is a current work in progress.
 
 ## 1. Identifying a nominal target pose
-
 The **nominal target pose** was selected such that:
 - the **error in position**, computed this as Euclidean distance between desired and reached target, is **below `1cm`**;
 - the **error in orientation**, computed this as $\arcsin \theta$, where $\theta$ is the angle between desired and reached orientation, is **below `15 degrees`**;
@@ -71,7 +70,6 @@ Finally, **the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 
 ## 2. Sensitivity analysis
 
 ### 2.1 Sampling the nominal pose
-
 Given the nominal pose we chose `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` following the analysis in #10, we perturbed its position sampling it with a uniform method within the three following ranges:
 - along the x direction: `[-5 5] cm`;
 - along the y direction: `[-3 3] cm`;
@@ -80,7 +78,6 @@ Given the nominal pose we chose `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` followin
 We selected `100` poses around the nominal pose with the afore-mentioned method and evaluated the **error** in _position_ and _orientation_ between the reached and the desired target and the **joint configuration**.
 
 ### 2.2 Evaluating errors in position and orientation
-
 The following shows the errors in position and orientation for the sampled poses:
 
 | error position [cm] | error orientation [deg] |
@@ -108,7 +105,6 @@ The plots show that:
 - the **error in orientation** presents a **bottom right area** with higher values, corresponding to poses closer to the robot and to the right of the nominal pose. This is expected as the left arm is used for performing the analysis and, importantly, the **right arm** can be used to cover this area.    
 
 ### 2.3 Evaluating the joint configuration
-
 The following shows the distances of each joint from its lower and upper limit for the sampled poses:
 
 | Joint configuration |
@@ -125,7 +121,6 @@ The joints are fairly distant from their limits (black and red histograms are hi
 Again, for this area the **right arm** can be used.
 
 ### 2.4 Final remarks
-
 The sensitivity analysis shows that:
 - __the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation__;
 - such area is reached with a __reasonable joint configuration__;
@@ -152,16 +147,15 @@ Here is some measures taken from the final CAD drawings:
 | |
 | :---: |
 | **Depth of the table** |
-| <p align="center"><img src=./assets/depth_table.png width="500"></p> |
-| **Height of iCub root frame** |
-| <p align="center"><img src=./assets/height_root.png width="500"></p> |
-| **Height of cube top face** |
-| <p align="center"><img src=./assets/height_cube.png width="500"></p> |
+| <p align="center"><img src=./assets/depth_table.png width="600"></p> |
+| **Height of the iCub root frame** |
+| <p align="center"><img src=./assets/height_root.png width="600"></p> |
+| **Height of the cube's top face** |
+| <p align="center"><img src=./assets/height_cube.png width="600"></p> |
 | **Resulting transformation cube->root** |
-| <p align="center"><img src=./assets/cube_root_transform.png width="500"></p> |
+| <p align="center"><img src=./assets/cube_root_transform.png width="600"></p> |
 
 ## 4. Selecting a pick and drop pose
-
 Finally, we selected a second location next to the drawer where iCub can pick/drop the cube.
 The pose selected is `-0.3 -0.3 -0.05 0.0 0.0 1.0 3.49066`, as it produced the following output:
 
