@@ -4,7 +4,7 @@ Design of Experiment
 The following report describes the procedure adopted to determine the optimal sizes of the table and the drawer.
 The procedure consisted of the following steps:
 1. [**Identifying a nominal target pose**](#1-identifying-a-nominal-target-pose)
-    - We selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joint configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table.
+    - We selected the left arm and identified a _nominal target pose_, to be reached both in position and orientation with low errors and with a joints configuration fairly away from the bounds. The nominal value for the y-axis is 0, whereas the nominal orientation is parallel to the table.
 1. [**Sensitivity analysis**](#2-sensitivity-analysis)
     - We performed a sensitivity analysis by _perturbing the nominal pose in position_ using a uniform sampling method.
 1. [**Optimizing table and drawer dimensions**](#3-optimizing-table-and-drawer-dimensions)
@@ -20,7 +20,7 @@ Moreover, executing robust grasping actions with iCub models in `Gazebo` is not 
 The **nominal target pose** was selected such that:
 - the **error in position**, computed this as Euclidean distance between desired and reached target, is **below `1cm`**;
 - the **error in orientation**, computed this as $\arcsin \theta$, where $\theta$ is the angle between desired and reached orientation, is **below `15 degrees`**;
-- the **joint configuration**, evaluated as distance between each joint (of left arm and torso) and their lower and upper limits, is **higher than `5.0 degrees`**.
+- the **joints configuration**, evaluated as distance between each joint (of left arm and torso) and their lower and upper limits, is **higher than `5.0 degrees`**.
 
 The analysis was performed by selecting a bunch of targets to reach and evaluating the aforementioned errors.
 The following table summarizes the results for different targets (averaged over 3 repetitions).
@@ -42,7 +42,7 @@ Results exceeding the thresholds (and thus bad targets) are highlighted, specifi
 - errors in orientation higher than `15 degrees`;
 - joints distances from their upper and lower limits lower than `10 degrees`.
 
-Overall, targets from 2 to 8 are reached with low errors in position and orientation, but specifically **targets 4, 7, 8**  provide fairly low errors in position (below `0.5 cm`). Furthermore, **target 7, 8** are reached with a joint configuration that better fits the limits.
+Overall, targets from 2 to 8 are reached with low errors in position and orientation, but specifically **targets 4, 7, 8**  provide fairly low errors in position (below `0.5 cm`). Furthermore, **target 7, 8** are reached with a joints configuration that better fits the limits.
 Regarding the other targets, we can notice that:
 
 - _target 1_ is not reached at all, as both errors in position and orientation are higher than the thresholds. Furthermore, the shoulder pitch and the torso yaw reach the lower and the upper limit respectively. This is an indication that the target is too far from the robot;
@@ -52,19 +52,19 @@ Regarding the other targets, we can notice that:
 
 **Target 7 and 8** are the most reasonable candidates as nominal poses. To accommodate for a reasonable table height, we chose **target 8** which is `5 cm` lower than target 7.
 
-The following are the errors in position and orientation and the joint configuration over the three repetitions for **target 8**.
+The following are the errors in position and orientation and the joints configuration over the three repetitions for **target 8**.
 
 | error position [cm] | error orientation [deg] |
 |--- |--- |
 |<img src=https://user-images.githubusercontent.com/9716288/88903253-ad4f5f00-d253-11ea-889f-e883d3c44bf2.jpg width="350"> | <img src=https://user-images.githubusercontent.com/9716288/88903240-a9234180-d253-11ea-84fb-9b07f6c8b45d.jpg width="350"> |
 | _Legend_: <br> _blue: error_ <br> _magenta: threshold_  |
 
-| Joint configuration |
+| Joints configuration |
 | --- |
 | <img src=https://user-images.githubusercontent.com/9716288/88903258-b0e2e600-d253-11ea-9c43-aa3272d9ee13.jpg width="650"> |
 | _Legend_: <br> _black: dist from lower limit_ <br> _red: dist from upper limit_ <br> _magenta: threshold_  |
 
-The errors in position and orientation are fairy below the thresholds, along with a reasonable joint configuration (joints are fairly away from their bounds).
+The errors in position and orientation are fairy below the thresholds, along with a reasonable joints configuration (joints are fairly away from their bounds).
 
 Finally, **the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`**.
 
@@ -76,7 +76,7 @@ Given the nominal pose we chose `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)` followin
 - along the y direction: `[-3 3] cm`;
 - along the z direction: `[-1 1] cm`.
 
-We selected `100` poses around the nominal pose with the afore-mentioned method and evaluated the **error** in _position_ and _orientation_ between the reached and the desired target and the **joint configuration**.
+We selected `100` poses around the nominal pose with the afore-mentioned method and evaluated the **error** in _position_ and _orientation_ between the reached and the desired target and the **joints configuration**.
 
 ### 2.2 Evaluating errors in position and orientation
 The following shows the errors in position and orientation for the sampled poses:
@@ -105,10 +105,10 @@ The plots show that:
 - the **error in position** stays consistently below `1cm`, with a _slight_ increase in the **top area** (cyan dots), corresponding to poses further from the robot;
 - the **error in orientation** presents a **bottom right area** with higher values, corresponding to poses closer to the robot and to the right of the nominal pose. This is expected as the left arm is used for performing the analysis and, importantly, the **right arm** can be used to cover this area.    
 
-### 2.3 Evaluating the joint configuration
+### 2.3 Evaluating the joints configuration
 The following shows the distances of each joint from its lower and upper limit for the sampled poses:
 
-| Joint configuration |
+| Joints configuration |
 | --- |
 | <img src=https://user-images.githubusercontent.com/9716288/88771863-21203780-d180-11ea-8d8b-4538a0a44f99.jpg> |
 | _Legend_: <br> _black: dist from lower limit_ <br> _red: dist from upper limit_ <br> _magenta: threshold: `5 deg`_  |
@@ -124,7 +124,7 @@ Again, for this area the **right arm** can be used.
 ### 2.4 Final remarks
 The sensitivity analysis shows that:
 - __the area around the nominal pose within `[-5 5] cm` along `x`, `[-3 3] cm` along `y` and `[-1 1] cm` along `z`, can be covered with a reachability of `0.43 +/- 0.33 cm` in position and `7.01 +/- 4.08 deg` in orientation__;
-- such area is reached with a __reasonable joint configuration__;
+- such area is reached with a __reasonable joints configuration__;
 - the sub-area on the right of the nominal pose is reached with __higher error in orientation and the elbow configuration close to its lower limit__. This can be addressed by resorting to the __right arm__ to cover the area.
 
 
