@@ -50,3 +50,6 @@ You may consider exploring the Gitpod workspace associated to this repo by click
 🔘 Find out more on [YARP-enabled Gitpod workspaces][1].
 
 [1]: https://spectrum.chat/icub/technicalities/yarp-enabled-gitpod-workspaces-available~73ab5ee9-830e-4b7f-9e99-195295bb5e34
+
+## Optimizing table and drawer dimensions
+The detailed analysis that led us to choose the best dimensions of table and drawer can be found [here](report.md).
