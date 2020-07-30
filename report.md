@@ -12,8 +12,9 @@ The procedure consisted of the following steps:
 1. [**Selecting a pick/drop pose**](#4-selecting-a-pick-and-drop-pose)
     - We additionally seeked for a suitable second location next to the drawer where iCub can pick/drop the cube.
 
-**Important note**: we simulated **reaching actions** and not grasping, as this is _task dependent_.
-Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but is a current work in progress.
+#### ⚠ **Important note**
+We simulated **reaching actions** and not grasping, as this is _task dependent_.
+Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but is a work in progress.
 
 ## 1. Identifying a nominal target pose
 The **nominal target pose** was selected such that:
