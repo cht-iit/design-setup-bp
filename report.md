@@ -9,7 +9,7 @@ The procedure consisted of the following steps:
     - We performed a sensitivity analysis by _perturbing the nominal pose in position_ using a uniform sampling method;
 1. [**Optimizing table and drawer dimensions**](#3-optimizing-table-and-drawer-dimensions)
     - We optimized for the table relative position with respect to the robot, its dimensions as well as the dimensions of the drawer. The quantity we aim to optimize for was the distance between the top-center of the cube and our target pose;
-1. [**Selecting pick/drop pose**](#4-selecting-a-pick-and-drop-pose)
+1. [**Selecting a pick/drop pose**](#4-selecting-a-pick-and-drop-pose)
     - We additionally seeked for a suitable second location next to the drawer where iCub can pick/drop the cube.
 
 ## 1. Identifying a nominal target pose
