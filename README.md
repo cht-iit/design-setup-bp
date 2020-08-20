@@ -36,8 +36,6 @@ $ cmake ../
 $ make install
 ```
 
-This will install the simulation assets and the world files under the location managed by the `icub-contrib-common` package (let's name it `ICUBcontrib_DIR` for later reference).
-
 ## ☁ Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
