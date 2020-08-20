@@ -1,4 +1,6 @@
-# Design Boggiano Pico Setup
+Design Boggiano Pico Setup
+==========================
+
 This repository contains the software required to optimize the dimensions of the setup which will be used by the [S4HRI](https://iit.it/research/lines/social-cognition-in-human-robot-interaction) Research Line at IIT to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
 
 <p align="center">
@@ -36,7 +38,7 @@ $ make install
 
 This will install the simulation assets and the world files under the location managed by the `icub-contrib-common` package (let's name it `ICUBcontrib_DIR` for later reference).
 
-## 🌐 Cloud IDE
+## ☁ Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
 
 [![Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/cht-iit/design-setup-bp)
