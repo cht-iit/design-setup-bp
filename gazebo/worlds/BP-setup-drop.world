@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<sdf version="1.5">
+<sdf version="1.7">
   <world name="default">
 
     <!-- Light -->
@@ -34,11 +34,13 @@
 
    <!-- Cube -->
    <!-- x: xtable + cad + half side -->
+   <!-- y: half drawer width + 0.2  -->
    <model name="cube">
     <include>
       <uri>model://BP_cube</uri>
-    </include> 
-    <pose>0.35 -0.038964 0.745 0 0 0</pose>
+    </include>
+    <static>true</static>
+    <pose>0.3 0.3 0.745 0 0 0.34907</pose>
    </model>
 
     <!-- Camera -->

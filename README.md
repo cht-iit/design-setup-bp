@@ -21,7 +21,7 @@ For using the simulated environment contained in this repository you have to ins
 - [`YARP`](https://www.yarp.it/install.html)
 - [`icub-main`](https://wiki.icub.org/wiki/ICub_Software_Installation)
 - [`icub-contrib-common`](https://wiki.icub.org/wiki/ICub_Software_Installation)
-- [`gazebo`](http://gazebosim.org/tutorials?tut=install_ubuntu)
+- [`gazebo`](http://gazebosim.org/tutorials?tut=install_ubuntu) >= 11
 - [`gazebo-yarp-plugins`](https://github.com/robotology/gazebo-yarp-plugins/blob/master/doc/install.md)
 - [`icub-models`](https://github.com/robotology/icub-models)
 
@@ -35,9 +35,6 @@ $ make install
 ```
 
 This will install the simulation assets and the world files under the location managed by the `icub-contrib-common` package (let's name it `ICUBcontrib_DIR` for later reference).
-
-Finally, it is required to export/extend the following environmental variables:
-- `GAZEBO_MODEL_PATH` – let it point **also** to `${ICUBcontrib_DIR}/share/setup-gazebo-bp/robots`.
 
 ## 🌐 Cloud IDE
 You may consider exploring the Gitpod workspace associated to this repo by clicking on the following badge:
