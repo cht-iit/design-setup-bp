@@ -66,7 +66,7 @@ The following are the errors in position and orientation and the joints configur
 
 The errors in position and orientation are fairy below the thresholds, along with a reasonable joints configuration (joints are fairly away from their bounds).
 
-Finally, **the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`**.
+🎯 Finally, **the nominal target pose we selected is `(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`**.
 
 ## 2. Sensitivity analysis
 
