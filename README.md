@@ -1,7 +1,7 @@
 Design Boggiano Pico Setup
 ==========================
 
-This repository contains the software required to optimize the dimensions of the setup which will be used by the [S4HRI](https://iit.it/research/lines/social-cognition-in-human-robot-interaction) Research Line at IIT to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
+This repository contains the software required to optimize the dimensions of the setup which will be used by the [S4HRI@IIT](https://iit.it/research/lines/social-cognition-in-human-robot-interaction) group to perform a specific [HRI experiment](./documents/experimental-protocol.pdf) with the iCub. Such setup consists of a standard height table (`~75cm`), containing a drawer with a `8cm x 8cm x 8cm` box placed in the middle, as shown in the following:
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/9716288/88031776-5d7ae480-cb3d-11ea-9967-af5954de04e4.png" width="400">
