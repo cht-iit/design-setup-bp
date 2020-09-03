@@ -17,6 +17,10 @@ We simulated **reaching actions** and not grasping, as this is _task dependent_.
 Moreover, executing robust grasping actions with iCub models in `Gazebo` is not supported at the moment, but it is a work in progress.
 
 ## 1. Identifying a nominal target pose
+#### TLDR
+🎯 The nominal target pose is **`(-0.35 0.0 -0.05 0.0 0.0 1.0 3.14159)`**.
+
+#### Study
 The **nominal target pose** was selected such that:
 - the **error in position**, computed this as Euclidean distance between desired and reached target, is **below `1cm`**;
 - the **error in orientation**, computed this as $\arcsin \theta$, where $\theta$ is the angle between desired and reached orientation, is **below `15 degrees`**;
